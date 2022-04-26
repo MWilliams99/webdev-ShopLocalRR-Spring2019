@@ -20,8 +20,10 @@ The Shop Local RR website includes 8 HTML/PHP pages:
 
 ## Design Process
 Our client provided their requirments for the website and ideas of extras that they would like to see in the website. They gave examples of layouts for the webpages and the feel that the website colors should convey. However, the client was also understanding that we had limited experience creating a whole website and that we were learning best practices for website design. For this reason, they let us have majority say in the design as long as they approved it and could give feedback with each step.
+
 The client provided the written content for the webpages throughout the site. As well as the costs for the domain and database to host the website.
 
 ## Acknowledgements
 A special thanks to my group members - Garry, Giovanni, and Ingrid for their participation in this project. Everyone had their own role to play in the project, from group leader to wireframe designs. The role I played in the project was to do the main coding for everything, however everyone checked off on each other's work to ensure it was a project we would all be proud to turn in for the final grade.
+
 Thank you to Mr. Emmanuel Obi at Halifax Community College for teaching the Spring 2019 CTS-289 System Support Project course and providing us the materials and challenge necessary for this project.
