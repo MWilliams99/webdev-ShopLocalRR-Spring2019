@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop Local RR - Join Local</title>
+	<meta name="author" content="HCC CTS-289-1D1 Spring 2019">
+	<link href="css/resetcss.css" rel="stylesheet"/>
+	<link href="css/slrr_layout.css" rel="stylesheet"/>
+	<link href="css/slrr_style.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="header">
+			<h1>Shop Local Roanoke Rapids</h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="whylocal.html">Why Local?</a></li>
+				<li><a href="buylocal.php">Buy Local</a></li>
+				<li><a href="dolocal.php">Do Local</a></li>
+				<li><a href="joinlocal.html">Join Local</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			
+			<h1>Join Our Database</h1>
+			<!--Javascript to show forms -->
+			<script>
+				function showBusForm(){
+					document.getElementById("busForm").style.display = "block";
+					document.getElementById("eventForm").style.display = "none";
+				}
+				function showEventForm(){
+					document.getElementById("eventForm").style.display = "block";
+					document.getElementById("busForm").style.display = "none";
+				}
+			</script>
+			
+			<p> Want to submit your business to our database? <button onclick="showBusForm()">Submit a Business</button><p>
+			<p> Have an event to submit to our database? <button onclick="showEventForm()">Submit an Event</button></p>
+			
+			
+			<!-- Business Form -->
+			<form action="formsubmitted.php" method="post" id="busForm" class="joinlocalform">
+			<fieldset>
+			<legend>Business Information:</legend>
+				<label for="busNameInput">Name <strong>*</strong></label>
+				<input name="busName" id="busNameInput" type="text" required maxlength="50" />
+				
+				<label for="busPhoneInput">Phone</label>
+				<input name="busPhone" id="busPhoneInput" type="text" maxlength="16" />
+				
+				<label for="busWebsiteInput">Website</label>
+				<input name="busWebsite" id="busWebsiteInput" type="text" maxlength="100" />
+				
+				<label for="busHoursInput">Hours</label>
+				<input name="busHours" id="busHoursInput" type="text" maxlength="100" />
+				
+				<label for="busTypeList">Type</label>
+				<select name="busType" id="busTypeList">
+					<option value="other">Other</option>
+					<option value="entertainment">Entertainment</option>
+					<option value="grocery">Grocery</option>
+					<option value="restaurant">Restaurant</option>
+					<option value="retail">Retail</option>
+					<option value="services">Services</option>
+					<option value="wholesale">Wholesale</option>
+				</select>
+				
+				<label for="busDescInput">Description</label>
+				<textarea name="busDesc" id="busDescInput" rows="4" ></textarea>
+				
+				
+				<label for="socmedFaceBInput">Facebook</label>
+				<input name="socmedFaceB" id="socmedFaceBInput" type="text" maxlength="100" />
+				
+				<label for="socmedTwitterInput">Twitter</label>
+				<input name="socmedTwitter" id="socmedTwitterInput" type="text" maxlength="100"/>
+				
+				<label for="socmedInstaInput">Instagram</label>
+				<input name="socmedInsta" id="socmedInstaInput" type="text" maxlength="100"/>
+			</fieldset>	
+				
+			<fieldset>
+			<legend>Contact Information:</legend>
+				<label for="conFNameInput">First Name</label>
+				<input name="conFName" id="conFNameInput" type="text" maxlength="30"/>
+				
+				<label for="conLNameInput">Last Name</label>
+				<input name="conLName" id="conLNameInput" type="text" maxlength="30"/>
+				
+				<label for="conPhoneInput">Phone</label>
+				<input name="conPhone" id="conPhoneInput" type="text" maxlength="16"/>
+				
+				<label for="conEmailInput">Email</label>
+				<input name="conEmail" id="conEmailInput" type="text" maxlength="100" />
+			</fieldset>
+			
+			<fieldset>
+			<legend>Location:</legend>
+				<label for="locStAddInput">Street Address</label>
+				<input name="locStAdd" id="locStAddInput" type="text" maxlength="50"/>
+				
+				<label for="locCityInput">City</label>
+				<input name="locCity" id="locCityInput" type="text" list="cityList" maxlength="50"/>
+				<datalist id="cityList">
+					<option value="Roanoke Rapids"/>
+				</datalist>
+				
+				<label for="locStateInput">State</label>
+				<input name="locState" id="locStateInput" type="text" list="stateList" maxlength="2" value="NC"/>
+				<datalist id="stateList">
+					<option value="NC"/>
+				</datalist>
+				
+				<label for="locZipInput">Zip Code</label>
+				<input name="locZip" id="locZipInput" type="text" maxlength="5"/>
+			</fieldset>
+			
+			<aside><strong>*</strong> Indicate required fields.</aside>
+			<fieldset>
+			<input type="submit" value="Submit Business" class="submitbutton"/>
+			<input name="formType" type="hidden" value="1"/>
+			</fieldset>
+			</form>
+			
+			<!-- Event Form -->
+			<form action="formsubmitted.php" method="post" id="eventForm" class="joinlocalform">
+			<fieldset>
+			<legend>Event Information:</legend>
+				<label for="eventNameInput">Name <strong>*</strong></label>
+				<input name="eventName" id="eventNameInput" type="text" required  maxlength="50"/>
+				
+				<label for="eventDateInput">Date <strong>*</strong></label>
+				<input name="eventDate" id="eventDateInput" type="date" required />
+				
+				<label for="eventStartInput">Start Time</label>
+				<input name="eventStart" id="eventStartInput" type="time"/>
+				
+				<label for="eventEndInput">End Time</label>
+				<input name="eventEnd" id="eventEndInput" type="time"/>
+				
+				<label for="eventHostInput">Host</label>
+				<input name="eventHost" id="eventHostInput" type="text" maxlength="50"/>
+				
+				<label for="eventDescInput">Description</label>
+				<textarea name="eventDesc" id="eventDescInput" rows="4" ></textarea>
+			</fieldset>
+				
+			<fieldset>
+			<legend>Contact Information:</legend>
+				<label for="conFNameInput">First Name</label>
+				<input name="conFName" id="conFNameInput" type="text" maxlength="30"/>
+				
+				<label for="conLNameInput">Last Name</label>
+				<input name="conLName" id="conLNameInput" type="text" maxlength="30"/>
+				
+				<label for="conPhoneInput">Phone</label>
+				<input name="conPhone" id="conPhoneInput" type="text" maxlength="16"/>
+				
+				<label for="conEmailInput">Email</label>
+				<input name="conEmail" id="conEmailInput" type="text" maxlength="100"/>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Location:</legend>
+				<label for="locStAddInput">Street Address</label>
+				<input name="locStAdd" id="locStAddInput" type="text" maxlength="50"/>
+				
+				<label for="locCityInput">City</label>
+				<input name="locCity" id="locCityInput" type="text" list="cityList" maxlength="50"/>
+				<datalist id="cityList">
+					<option value="Roanoke Rapids"/>
+				</datalist>
+				
+				<label for="locStateInput">State</label>
+				<input name="locState" id="locStateInput" type="text" list="stateList" value="NC" maxlength="2"/>
+				<datalist id="stateList">
+					<option value="NC"/>
+				</datalist>
+				
+				<label for="locZipInput">Zip Code</label>
+				<input name="locZip" id="locZipInput" type="text" maxlength="5"/>
+			</fieldset>	
+			
+			<aside><strong>*</strong> Indicate required fields.</aside>
+			<fieldset>
+			<input type="submit" value="Submit Event" class="submitbutton"/>
+			<input name="formType" type="hidden" value="2"/>
+			</fieldset>
+			</form>
+			
+		</div>
+		<div class="footer">
+			<p>Created by Information Technology Students of <a href="createdlocal.html">HCC</a>.</p>
+		</div>
+	</div>
+</body>
+</html>
