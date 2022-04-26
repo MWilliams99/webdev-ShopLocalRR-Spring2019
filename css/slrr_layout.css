@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15% 5% auto 5%;
+  grid-template-areas: "header" "nav" "content" "footer";
+}
+
+.header { grid-area: header; }
+
+.nav { grid-area: nav; }
+
+.content { grid-area: content; }
+
+.footer { grid-area: footer; }
