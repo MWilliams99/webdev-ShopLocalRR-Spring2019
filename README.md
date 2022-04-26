@@ -2,7 +2,9 @@
 
 ## Project Description
 Local Business website created as the final project for the Spring 2019 CTS-289 System Support Project course at Halifax Community College.  
-The class size for this course was just four of us and we were tasked with completing a group project for the final. The assignment was to find a local business or client in want of a website. The client we located, rather than wanting a website for a specific business, wanted a website for all local businesses and events to compile information in one location. This website was called *Shop Local Roanoke Rapids* and was hosted for a couple years after completion. Unfortunately the website is no longer operational.  
+The class size for this course was just four of us and we were tasked with completing a group project for the final. The assignment was to find a local business or client in want of a website.  
+The client we located, rather than wanting a website for a specific business, wanted a website for all local businesses and events to compile information in one location. This website was called *Shop Local Roanoke Rapids* and was hosted for a couple years after completion. Unfortunately the website is no longer operational.  
+
 This project uses HTML, CSS, PHP, and MySQL to demonstrate what was learned throughout the course and to accomplish the needs of our client. The website was coded to connect to a database also designed as part of the project.
 
 This project began at the start of the Spring 2019 semester with us finding a client to create a website for and planning the layout/content of the website.  
